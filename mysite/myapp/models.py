@@ -5,6 +5,7 @@ Examples:
 Function views
     1. Add an import:  from my_app import views'''
 # Create your models here.
+#Expense model
 class Expense(models.Model):
     name = models.CharField(max_length=100)
     amount = models.IntegerField()

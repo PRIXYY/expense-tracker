@@ -40,7 +40,7 @@ def index(request):
     return render(request,'myapp/index.html',{'expense_form':expense_form,'expenses':expenses,'total_expenses':total_expenses,'yearly_sum':yearly_sum,'monthly_sum':monthly_sum,'weekly_sum':weekly_sum,'daily_sums':daily_sums,'categorical_sums':categorical_sums})
 
     
-
+#Function for editing
 def edit(request,id):
     expense = Expense.objects.get(id=id)
     expense_form = ExpenseForm(instance=expense)
